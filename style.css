@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #0B1C51;
+    margin-bottom: 40px;
+}
+
+
+header h1 {
+    color: #fff;
+    font-size: 52px;
+    text-align: center;
+    /* removes default margin spacing around h1 */
+    margin: 0;
+    /* pushes text down 20px from top of the page */
+    padding-top: 20px;
+}
+
+
+/* main <header> navigation */
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* unordered list for navigation*/
+header nav ul {
+    /* want the navigation to display in a single row so we don't need flex-direction */
+    display: flex;
+    /* removing default padding to the left of the unordered list */
+    padding-left: 0;
+    /* removing bullet points from list items within unordered list (ul) */
+    list-style: none;
+    font-family: 
+}
+
+
+header nav ul li a {
+    color: #fff;
+    font-family: Montserrat;
+    /* remove underlines from links <li> */
+    text-decoration: none;
+    /* applies 20px of margin to the right of each link. creating a visual gap between the navigation links */
+    margin: 0 20px 0 0;
+}
+
+
+/* this targets the last list item contained anchor link */
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+/* media query for screens over 600pixels (Desktop) */
+@media all and (min-width: 600px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+  
+    header h1 {
+      font-size: 48px;
+      margin: 14px 0;
+      padding-top: 6px;
+    }
+  
+    header nav {
+      margin-top: 14px;
+    }
+  
+    header nav ul li a:hover {
+      color: #bdbdbd;
+    }
+  }
